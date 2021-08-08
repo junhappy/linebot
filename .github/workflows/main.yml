@@ -5,8 +5,10 @@ name: test_chatbot
 on:
 #  push:
   schedule:
-    - cron: '0 22 * * *'
-
+    - cron: '0 22 * * *' #AM7
+    - cron: '0 4 * * *' #PM1
+    - cron: '0 8 * * *' #PM5
+    
 jobs:
   build:
     # Ubuntuの最新版環境内で処理
